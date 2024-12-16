@@ -5,7 +5,7 @@ node_modules/
 *.db
 
 # Ignore APIDOC generated files (optional)
-apidoc/
+ apidoc/
 
 # Ignore environment files (if used)
 .env
