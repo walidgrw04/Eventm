@@ -1,0 +1,15 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore SQLite database
+*.db
+
+# Ignore APIDOC generated files (optional)
+apidoc/
+
+# Ignore environment files (if used)
+.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db

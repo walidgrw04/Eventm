@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Event Planner</h1>
+
+    <!-- Section to Display Events -->
+    <div id="events-container">
+        <h2>All Events</h2>
+        <div id="events-list">
+            <!-- Events will be dynamically populated here -->
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Form to Add Event -->
+    <h2>Create a New Event</h2>
+    <form id="event-form">
+        <input type="text" id="title" placeholder="Title" required><br>
+        <input type="text" id="description" placeholder="Description"><br>
+        <input type="date" id="date" required><br>
+        <input type="time" id="time" required><br>
+        <input type="text" id="location" placeholder="Location" required><br>
+        <button type="submit">Add Event</button>
+    </form>
+    <p id="form-feedback" style="color: red; display: none;"></p>
+
+    <hr>
+
+    <!-- Form to Update Event -->
+    <h2>Update Event</h2>
+    <form id="update-form" style="display: none;">
+        <input type="hidden" id="update-id">
+        <input type="text" id="update-title" placeholder="Title" required><br>
+        <input type="text" id="update-description" placeholder="Description"><br>
+        <input type="date" id="update-date" required><br>
+        <input type="time" id="update-time" required><br>
+        <input type="text" id="update-location" placeholder="Location" required><br>
+        <button type="submit">Update Event</button>
+        <button type="button" onclick="cancelUpdate()">Cancel</button>
+    </form>
+    <p id="update-feedback" style="color: red; display: none;"></p>
+</body>
+</html>
