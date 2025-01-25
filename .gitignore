@@ -4,9 +4,6 @@ node_modules/
 # Ignore SQLite database
 *.db
 
-# Ignore APIDOC generated files (optional)
- apidoc/
-
 # Ignore environment files (if used)
 .env
 
